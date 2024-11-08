@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -85,5 +86,8 @@
         YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    {% block javascript %}
+      <script src="{% static 'js/base.js' %}"></script>
+    {% endblock javascript %}
   </body>
 </html>
